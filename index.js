@@ -18,7 +18,7 @@ app.get('/', (req, res) => {
 
 app.use(express.json())
 
-app.use('api/v1/users',UserRoutes)
+app.use('/api/v1/users',UserRoutes)
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })
