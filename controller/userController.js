@@ -2,6 +2,8 @@ import User from '../models/User.model.js'
 
 const createUser = async (req,res)=>{
     const {name,email,age,interest} = req.body;
+    console.log(req.body)
+    console.log(name,email,age,interest)
     if(!name  || !email || !age || !interest) {
         return res.status(400).json({
             success : false,
